@@ -131,3 +131,19 @@
         gap: 2rem;
     }
 }
+
+.cert-link {
+    margin-left: auto;
+    color: var(--accent-color);
+    transition: color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+    padding-left: 1rem;
+}
+
+.cert-link:hover {
+    color: var(--text-primary);
+    opacity: 1;
+}

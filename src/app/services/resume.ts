@@ -31,7 +31,10 @@ export interface ResumeData {
     link?: string;
   }[];
   skills: string[];
-  certifications: string[];
+  certifications: {
+    name: string;
+    link?: string;
+  }[];
 }
 
 @Injectable({
@@ -94,7 +97,10 @@ export class ResumeService {
       "HTML", "CSS"
     ],
     certifications: [
-      "AWS Cloud Practitioner (Aug 2023)"
+      {
+        name: "AWS Cloud Practitioner (Aug 2023)",
+        link: "#"
+      }
     ]
   };
 
