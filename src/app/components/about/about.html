@@ -1,0 +1,41 @@
+<section id="about" class="section">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+            <div class="bio-section">
+                <h3 class="name-highlight">Bio</h3>
+                <p>{{ data.bio }}</p>
+
+                <h3 class="mt-6">Education</h3>
+                <div class="education-list">
+                    @for (edu of data.education; track edu.school) {
+                    <div class="education-item">
+                        <h4>{{ edu.degree }}</h4>
+                        <span class="school">{{ edu.school }}</span>
+                        <span class="period">{{ edu.period }}</span>
+                        @if (edu.details) {
+                        <p class="details">{{ edu.details }}</p>
+                        }
+                    </div>
+                    }
+                </div>
+
+                <h3 class="mt-6">Certifications</h3>
+                <ul class="cert-list">
+                    @for (cert of data.certifications; track cert) {
+                    <li>{{ cert }}</li>
+                    }
+                </ul>
+            </div>
+
+            <div class="skills-section">
+                <h3>Skills</h3>
+                <div class="skills-grid">
+                    @for (skill of data.skills; track skill) {
+                    <span class="skill-tag">{{ skill }}</span>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

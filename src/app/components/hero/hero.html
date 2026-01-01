@@ -1,0 +1,31 @@
+<section class="hero">
+    <div class="container hero-container">
+        <div class="hero-image">
+            <img [src]="data.photo" [alt]="data.name">
+        </div>
+        <div class="hero-content">
+            <p class="greeting">Hello, I'm</p>
+            <h1 class="name">{{ data.name }}</h1>
+            <h2 class="role">{{ data.role }}</h2>
+            <p class="bio">{{ data.bio }}</p>
+            <div class="actions">
+                <a href="#projects" class="btn">View My Work</a>
+                <a href="#contact" class="btn-outline">Contact Me</a>
+            </div>
+            <div class="social-links">
+                <a [href]="data.links.github" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a [href]="data.links.linkedin" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a [href]="data.links.leetcode" target="_blank" aria-label="LeetCode">
+                    <i class="fas fa-code"></i> LeetCode
+                </a>
+            </div>
+            <p class="email"><i class="fas fa-envelope"></i> <a [href]="'mailto:' + data.email">{{ data.email }}</a></p>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> {{ data.location }}</p>
+        </div>
+    </div>
+    <div class="glow-bg"></div>
+</section>
