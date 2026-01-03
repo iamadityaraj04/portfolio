@@ -4,6 +4,7 @@ export interface ResumeData {
   name: string;
   role: string;
   photo: string;
+  summary: string;
   bio: string;
   email: string;
   location: string;
@@ -15,6 +16,7 @@ export interface ResumeData {
   experience: {
     role: string;
     company: string;
+    client?: string;
     period: string;
     description: string[];
   }[];
@@ -45,7 +47,8 @@ export class ResumeService {
     name: "Aditya Raj",
     role: "Software Engineer",
     photo: "profile.png",
-    bio: "Software engineer with 2.5+ years of experience in Java Backend development, currently employed by an organisation in the electric vehicle industry that operates across 6 countries. Key responsibilities include designing and developing efficient APIs to support the company's operational requirements. Skilled in programming languages, software design, and debugging. Strong focus on team collaboration and achieving results.",
+    summary: "Software Engineer with 2.5+ years of experience in Java backend development. Specialized in building scalable APIs and distributed systems for global operations. Passionate about clean code, performance optimization, and collaborative problem-solving.",
+    bio: "I am a results-driven Java Backend Engineer with over 2.5 years of experience building mission-critical systems in the electric vehicle industry. My expertise lies in designing high-performance APIs and optimizing complex data workflows to support global operations across six countries. Driven by a passion for clean code and performance optimization, I thrive in collaborative environments that solve real-world problems through innovative technology.",
     email: "raj.aditya@outlook.in",
     location: "Bengaluru, Karnataka",
     links: {
@@ -57,7 +60,17 @@ export class ResumeService {
       {
         role: "Software Engineer",
         company: "Wissen Technology",
-        period: "Jun 2023 - Present",
+        client: "Goldman Sachs",
+        period: "Dec 2025 - Present",
+        description: [
+          "Collaborating on high-scale financial technology solutions and API development."
+        ]
+      },
+      {
+        role: "Software Engineer",
+        company: "Wissen Technology",
+        client: "Spiro (EV Industry)",
+        period: "Jul 2023 - Nov 2025",
         description: [
           "Resolved post-payment database update failures by implementing a Redis cache, ensuring transaction state persistence and achieving 100% reliability",
           "Optimised the bulk upload API, reducing processing time from approximately 10 minutes for 500 records to 1 minute—a 90% improvement in efficiency.",
@@ -88,7 +101,7 @@ export class ResumeService {
         name: "Sweat",
         description: "Designed responsive web pages using industry-standard technologies (HTML/CSS/JavaScript/Bootstrap) that focused on improving top drop-off points in customer journey maps for better retention rates.",
         technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-        link: "https://github.com/iamadityaraj04/Sweat"
+        link: "https://github.com/iamadityaraj04/sweat-website"
       }
     ],
     skills: [
@@ -99,7 +112,7 @@ export class ResumeService {
     certifications: [
       {
         name: "AWS Cloud Practitioner (Aug 2023)",
-        link: "#"
+        link: "https://www.credly.com/badges/2fba49b3-636e-4e38-8c79-146c857a4a43/public_url"
       }
     ]
   };
