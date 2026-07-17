@@ -15,6 +15,7 @@ export interface ResumeData {
     linkedin: string;
     leetcode: string;
   };
+  resumeUrl: string;
   experience: {
     role: string;
     company: string;
@@ -57,7 +58,8 @@ export class ResumeService {
       github: "https://github.com/iamadityaraj04/",
       linkedin: "https://www.linkedin.com/in/iamadityaraj04/",
       leetcode: "https://leetcode.com/u/iamadityaraj04/"
-    },
+    },    
+    resumeUrl: "https://drive.google.com/file/d/12mOndJD6wT8qH8uWNTqniTrQ3CZwbp3f/view?usp=sharing",
     experience: [
       {
         role: "Software Engineer",
