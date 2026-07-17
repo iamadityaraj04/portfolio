@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 
+const YEARS_OF_EXPERIENCE = 3;
+
 export interface ResumeData {
   name: string;
   role: string;
@@ -45,10 +47,10 @@ export interface ResumeData {
 export class ResumeService {
   private data: ResumeData = {
     name: "Aditya Raj",
-    role: "Software Engineer",
+    role: "Software Engineer"  ,
     photo: "profile.png",
-    summary: "Software Engineer with 2.5+ years of experience in Java backend development. Specialized in building scalable APIs and distributed systems for global operations. Passionate about clean code, performance optimization, and collaborative problem-solving.",
-    bio: "I am a results-driven Java Backend Engineer with over 2.5 years of experience building mission-critical systems in the electric vehicle industry. My expertise lies in designing high-performance APIs and optimizing complex data workflows to support global operations across six countries. Driven by a passion for clean code and performance optimization, I thrive in collaborative environments that solve real-world problems through innovative technology.",
+    summary: `With ${YEARS_OF_EXPERIENCE} years of experience in Java backend development. Specialized in building scalable APIs and distributed systems for global operations. Passionate about clean code, performance optimization, and collaborative problem-solving.`,
+    bio: `I am a results-driven Java Backend Engineer with over ${YEARS_OF_EXPERIENCE} years of experience building mission-critical systems in the electric vehicle industry. My expertise lies in designing high-performance APIs and optimizing complex data workflows to support global operations across six countries. Driven by a passion for clean code and performance optimization, I thrive in collaborative environments that solve real-world problems through innovative technology.`,
     email: "raj.aditya@outlook.in",
     location: "Bengaluru, Karnataka",
     links: {
