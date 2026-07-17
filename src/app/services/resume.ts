@@ -115,8 +115,12 @@ export class ResumeService {
     ],
     certifications: [
       {
-        name: "AWS Cloud Practitioner (Aug 2023)",
+        name: "AWS Cloud Practitioner",
         link: "https://www.credly.com/badges/2fba49b3-636e-4e38-8c79-146c857a4a43/public_url"
+      },
+      {
+        name: "Data Structures, Algorithms and System Design",
+        link: "https://drive.google.com/file/d/12XFsNiG8vD7SUpOvpN6RlWscuel9d947/view?usp=share_link"
       }
     ]
   };
