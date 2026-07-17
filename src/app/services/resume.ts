@@ -14,6 +14,7 @@ export interface ResumeData {
     github: string;
     linkedin: string;
     leetcode: string;
+    medium: string;
   };
   resumeUrl: string;
   experience: {
@@ -57,7 +58,8 @@ export class ResumeService {
     links: {
       github: "https://github.com/iamadityaraj04/",
       linkedin: "https://www.linkedin.com/in/iamadityaraj04/",
-      leetcode: "https://leetcode.com/u/iamadityaraj04/"
+      leetcode: "https://leetcode.com/u/iamadityaraj04/",
+      medium: "https://iamadityaraj04.medium.com/"
     },    
     resumeUrl: "https://drive.google.com/file/d/12mOndJD6wT8qH8uWNTqniTrQ3CZwbp3f/view?usp=sharing",
     experience: [
